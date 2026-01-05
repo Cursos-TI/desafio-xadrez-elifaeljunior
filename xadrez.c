@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    
+
+
     int casasTorre = 5;
 
     printf("Movimento da Torre:\n");
@@ -10,6 +11,7 @@ int main() {
     }
 
     printf("\n");
+
 
     int casasBispo = 5;
     int contadorBispo = 1;
@@ -30,6 +32,27 @@ int main() {
         printf("Esquerda\n");
         contadorRainha++;
     } while (contadorRainha <= casasRainha);
+
+    printf("\n");
+
+
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+
+    printf("Movimento do Cavalo:\n");
+    
+    for (int i = 1; i <= casasBaixo; i++) {
+        printf("Baixo\n");
+
+     
+        if (i == casasBaixo) {
+            int contadorHorizontal = 1;
+            while (contadorHorizontal <= casasEsquerda) {
+                printf("Esquerda\n");
+                contadorHorizontal++;
+            }
+        }
+    }
 
     return 0;
 }
